@@ -2,15 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS3 Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cosmic Animation Universe</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Click the button to see the magic!</h1>
+    <!-- Particle background -->
+    <div id="particles-js"></div>
 
-    <button id="animate-btn">Click Me</button>
+    <!-- Stars layers -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
 
+    <!-- Floating planets -->
+    <img src="planet1.png" alt="Planet" class="planet planet1" />
+    <img src="planet2.png" alt="Planet" class="planet planet2" />
+
+    <header>
+      <h1 class="fade-in">🌟 Welcome to the COSMOS 🌟</h1>
+      <p class="fade-in delay-1">Particles 🌌 Planets 🛸 Shooting Stars ✨</p>
+    </header>
+
+    <main class="main-content">
+      <section class="card slide-up">
+        <h2>Magic Cosmic Box</h2>
+        <div id="box" class="glow rotate"></div>
+        <button id="animateBtn" class="pulse">Cosmic Blast!</button>
+      </section>
+    </main>
+
+    <footer class="fade-in delay-2">
+      <p>Crafted among the Stars 💫</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
